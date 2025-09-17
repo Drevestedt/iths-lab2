@@ -1,0 +1,158 @@
+/* Hero section */
+#hero {
+  min-height: 45vh;
+  background: linear-gradient(135deg, #6b006b64 0%, #6b006bb1 110%);
+  justify-content: flex-start;
+}
+
+#hero h2 {
+  font-size: 150%;
+  color: #ffd700;
+}
+
+#hero p {
+  color: #faf9f6;
+}
+
+#hero .para-two {
+  margin-top: 1em;
+}
+
+#hero .para-three {
+  margin-top: 1em;
+}
+
+#hero a {
+  font-size: large;
+  background-color: #6b006b;
+  color: #ffd700;
+  padding: 0.5em;
+  text-decoration: none;
+  border: none;
+  border-radius: 5%;
+  margin-top: 2em;
+}
+
+/* Skills section */
+#skills {
+  min-height: 25vh;
+}
+
+#skills h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  color: #6b006b;
+}
+
+#skills ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 165%;
+  color: #6b006b;
+}
+
+#skills .ul-one li {
+  margin-top: 1em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+#skills .ul-two li {
+  margin-top: 0.5em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+
+#skills .ul-three li {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* Media queries */
+@media screen and (min-width: 480px) {
+  #hero {
+    min-height: 50vh;
+  }
+
+  #hero h2 {
+    font-size: 160%;
+  }
+
+  #skills {
+    min-height: 30vh;
+    font-size: 120%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Hero section */
+  #hero {
+    min-height: 55vh;
+  }
+
+  #hero h2 {
+    font-size: 170%;
+  }
+
+  #hero a {
+    margin-top: 2.5em;
+  }
+
+  /* Skills section */
+  #skills {
+    min-height: 32vh;
+  }
+
+  #skills ul {
+    font-size: 175%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Hero section */
+  #hero {
+    min-height: 52vh;
+  }
+
+  #hero h2 {
+    font-size: 180%;
+  }
+
+  #hero a {
+    margin-top: 2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #about-cta .button-one {
+    margin-right: 4em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header {
+    justify-content: space-around;
+  }
+
+  /* Hero section */
+  #hero {
+    min-height: 48vh;
+  }
+
+  #hero a {
+    margin-top: 2.5em;
+  }
+
+  /* Skills section */
+  #skills {
+    min-height: 28vh;
+  }
+
+  /* Footer */
+  footer {
+    justify-content: space-around;
+  }
+}

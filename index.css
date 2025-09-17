@@ -1,0 +1,667 @@
+/* Google Font link */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(205, 205, 205);
+  font-family: Merriweather, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+/* Header and nav */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6b006b;
+  height: 25vh;
+}
+
+header h1 {
+  margin: 1em 0.5em 0em 0.5em;
+}
+
+header ul {
+  list-style: none;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 60px;
+  margin-bottom: 0.5em;
+  font-size: 105%;
+}
+
+header li {
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 1em;
+}
+
+header a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #c6a800;
+}
+
+/* Main */
+main {
+  flex: 1;
+}
+
+/* Hero */
+#hero {
+  min-height: 40vh;
+  background: linear-gradient(135deg, #6b006b 0%, #c6a800 100%);
+  color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h2 {
+  font-size: larger;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#hero .p-second {
+  margin-top: 0.5em;
+}
+
+#hero .p-third {
+  margin-top: 0.5em;
+}
+
+#hero .buttons {
+  margin-top: 4em;
+}
+
+#hero .button {
+  font-size: large;
+  background-color: #6b006b;
+  color: #ffd700;
+  padding: 0.5em;
+  text-decoration: none;
+  border: none;
+  border-radius: 5%;
+  margin: 0 1em 0 1em;
+}
+
+#hero .button:hover {
+  background-color: #570157;
+  color: #c6a800;
+}
+
+/* Project grid */
+#project-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#project-grid h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0.5em;
+  color: #6b006b;
+  font-weight: 900;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6b006b;
+  height: 350px;
+  border-radius: 3%;
+  margin-bottom: 1em;
+}
+
+.project-card h3 {
+  color: #ffd700;
+  margin: 0.7em;
+  font-size: larger;
+}
+
+.project-card p {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.project-card .p-second {
+  margin-top: 0.5em;
+}
+
+.project-img {
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 1em;
+}
+
+.project-card a {
+  background-color: #ffd700;
+  padding: 0.5em 0.8em;
+  margin-top: 3em;
+  font-size: 95%;
+  text-decoration: none;
+  border: none;
+  border-radius: 5%;
+  color: #6b006b;
+}
+
+.project-card a:hover {
+  background-color: #c6a800;
+  color: #570157;
+}
+
+.project-card .button-one {
+  margin-top: 3.5em;
+}
+
+.project-card .button-two {
+  margin-top: 1.5em;
+}
+
+.project-card .button-three {
+  margin-top: 1em;
+}
+
+/* Contact section */
+#contact-section {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #6b006b 0%, #c6a800 100%);
+  color: #faf9f6;
+}
+
+#contact-section h3 {
+  margin-top: 1.5em;
+  font-size: 140%;
+}
+
+.contact-links {
+  margin-top: 1em;
+}
+
+#contact-section .links {
+  display: flex;
+  margin-top: 1em;
+  font-size: 110%;
+}
+
+#contact-section .links a {
+  color: #faf9f6;
+  margin-left: 0.5em;
+  text-decoration: none;
+}
+
+#contact-section .links a:hover {
+  color: #ffd700;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6b006b;
+  color: #ffd700;
+  padding: 1em;
+  font-size: small;
+}
+
+footer p {
+  margin-top: 0.5em;
+}
+
+footer .footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #c6a800;
+}
+
+footer .social {
+  font-size: large;
+  margin-top: 0.3em;
+}
+
+footer .social a {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* Media queries */
+@media screen and (min-width: 480px) {
+  /* Header and nav */
+  header {
+    height: 30vh;
+  }
+
+  header h1 {
+    font-size: 250%;
+  }
+
+  header ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+    font-size: 120%;
+  }
+
+  /* Hero */
+  #hero h2 {
+    font-size: 170%;
+  }
+  #hero p {
+    font-size: 120%;
+  }
+
+  /* Project grid */
+  .project-card {
+    background-color: #6b006b;
+    height: 415px;
+    width: 400px;
+    border-radius: 3%;
+    margin-bottom: 1em;
+  }
+
+  .project-img {
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 1em;
+  }
+
+  .project-card a {
+    font-size: large;
+  }
+
+  .project-card .button-zero {
+    margin-top: 4em;
+  }
+
+  .project-card .button-one {
+    margin-top: 4em;
+  }
+
+  .project-card .button-two {
+    margin-top: 1.5em;
+  }
+
+  .project-card .button-three {
+    margin-top: 1em;
+  }
+
+  /* Contact section */
+  #contact-section {
+    min-height: 35vh;
+  }
+
+  #contact-section h3 {
+    font-size: 180%;
+  }
+
+  #contact-section a {
+    font-size: 120%;
+  }
+
+  /* Footer */
+  footer {
+    font-size: medium;
+  }
+
+  footer .social {
+    font-size: 130%;
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Header and nav */
+  header {
+    height: 25vh;
+  }
+
+  header h1 {
+    font-size: 280%;
+    margin-bottom: 0;
+  }
+
+  header ul {
+    display: flex;
+  }
+
+  header ul li {
+    font-size: 110%;
+  }
+
+  /* Hero */
+  #hero {
+    min-height: 50vh;
+  }
+
+  #hero h2 {
+    font-size: 210%;
+  }
+
+  #hero p {
+    font-size: 130%;
+  }
+
+  #hero .buttons {
+    margin-top: 3em;
+  }
+
+  #hero .button {
+    font-size: larger;
+  }
+
+  /* Project section */
+  #project-grid h2 {
+    font-size: 200%;
+  }
+
+  .project-card {
+    height: 620px;
+    width: auto;
+  }
+
+  .project-card h3 {
+    font-size: 200%;
+  }
+
+  .project-card p {
+    font-size: 130%;
+  }
+
+  .project-img {
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 2em;
+  }
+
+  .project-card .button-zero {
+    margin-top: 6.5em;
+  }
+
+  .project-card .button-one {
+    margin-top: 6em;
+  }
+
+  .project-card .button-two {
+    margin-top: 3em;
+  }
+
+  .project-card .button-three {
+    margin-top: 2em;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: medium;
+    padding: 1em;
+  }
+
+  footer p {
+    margin-left: 1em;
+  }
+
+  footer .footer-contacts {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+  }
+
+  footer .social {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer .social .fa-github {
+    margin-left: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Header and nav */
+  header {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header h1 {
+    margin: 0 0 0 1em;
+    font-size: 250%;
+  }
+
+  header ul {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    margin-left: 5.5em;
+    margin-bottom: 2em;
+  }
+
+  /* Hero */
+  #hero {
+    min-height: 60vh;
+  }
+
+  #hero h2 {
+    font-size: 210%;
+  }
+
+  #hero p {
+    font-size: 120%;
+  }
+
+  #hero .buttons {
+    margin-top: 3.5em;
+  }
+
+  #hero .button {
+    font-size: larger;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  /* Project section */
+  #project-grid {
+    margin-top: 1em;
+  }
+
+  #project-grid h2 {
+    font-size: 100%;
+  }
+
+  #projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+
+  #project-grid h2 {
+    font-size: 180%;
+  }
+
+  .project-card {
+    height: 450px;
+    width: auto;
+    margin: 0;
+  }
+
+  .project-card h3 {
+    font-size: 140%;
+  }
+
+  .project-card p {
+    font-size: 110%;
+  }
+
+  .project-img {
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 2em;
+  }
+
+  .project-card .button-zero {
+    margin-top: 5em;
+    font-size: 100%;
+  }
+
+  .project-card .button-one {
+    margin-top: 5em;
+    font-size: 100%;
+  }
+
+  .project-card .button-two {
+    margin-top: 2.1em;
+    font-size: 100%;
+  }
+
+  .project-card .button-three {
+    margin-top: 1.2em;
+    font-size: 100%;
+  }
+
+  /* Contact section */
+
+  #contact-section h3 {
+    font-size: 170%;
+  }
+
+  #contact-section a {
+    font-size: 110%;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: medium;
+    padding: 1em;
+  }
+
+  footer p {
+    margin-left: 1em;
+  }
+
+  footer .footer-contacts {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+  }
+
+  footer .social {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer .social .fa-github {
+    margin-left: 1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Header and nav */
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header h1 {
+    margin-left: 1.5em;
+  }
+
+  header nav {
+    margin-right: 3em;
+  }
+
+  #hero .buttons {
+    margin-top: 5em;
+  }
+
+  /* Footer */
+  footer {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /* Header and nav */
+  header {
+    justify-content: space-between;
+  }
+
+  /* Projects section */
+  #projects {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 5em;
+    gap: 1.5em;
+  }
+
+  /* Contact section */
+  #contact-section {
+    min-height: 30vh;
+  }
+
+  /* Footer */
+  footer {
+    justify-content: space-between;
+  }
+
+  footer p {
+    margin-left: 2em;
+  }
+
+  footer .footer-contacts {
+    margin-right: 1em;
+  }
+}
