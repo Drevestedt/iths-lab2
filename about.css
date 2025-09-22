@@ -127,8 +127,42 @@
 }
 
 @media screen and (min-width: 1200px) {
+  /* Header and Nav */
+  header {
+    justify-content: space-between;
+  }
+
+  /* Main */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  /* Hero */
+  #hero {
+    justify-content: center;
+  }
+
   #about-cta .button-one {
     margin-right: 4em;
+  }
+
+  /* Skills section */
+  #skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Contact section */
+  #contact-section {
+    justify-content: center;
+  }
+
+  /* Footer */
+  footer {
+    justify-content: space-between;
   }
 }
 
