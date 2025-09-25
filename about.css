@@ -167,10 +167,6 @@
 }
 
 @media screen and (min-width: 1400px) {
-  header {
-    justify-content: space-around;
-  }
-
   /* Hero section */
   #hero {
     min-height: 48vh;
@@ -183,10 +179,5 @@
   /* Skills section */
   #skills {
     min-height: 28vh;
-  }
-
-  /* Footer */
-  footer {
-    justify-content: space-around;
   }
 }
